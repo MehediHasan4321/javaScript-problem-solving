@@ -40,14 +40,14 @@ function isLGSeven(number) {
 }
 
 
-//Problem-4
+//Problem no-4
 function findingBadData(arr) {
     let badDate = 0;
     let goodDate = 0;
-    for (let i = 0; i< arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] < 0) {
             badDate += 1;
-        } else if(arr[i]>=0) {
+        } else if (arr[i] >= 0) {
             goodDate++
         }
 
@@ -55,4 +55,18 @@ function findingBadData(arr) {
     return badDate;
 }
 
-console.log(findingBadData(arr))
+//Problem no-5
+
+function gemsToDiamond(friGam1, friGam2, friGam3) {
+    const firstFriendGam = friGam1 * 21;
+    const secondFriendGam = friGam2 * 32;
+    const thirdFriendGam = friGam3 * 43;
+    const totalGam = firstFriendGam + secondFriendGam + thirdFriendGam;
+    if (totalGam > (1000 * 2)) {
+        return totalGam - 2000;
+    }
+    else if (totalGam < (1000 * 2)) {
+        return totalGam
+    }
+}
+console.log(gemsToDiamond(100,5,1))
