@@ -18,7 +18,7 @@ function mindGame(number) {
     }
     return result;
 }
-console.log(mindGame(33))
+
 
 //Problem no-2
 //evenOdd function take a string and it will check the string length, if string length divided by 2 and the remainder will be 0 it will return "even";
