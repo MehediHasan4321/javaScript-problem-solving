@@ -11,4 +11,4 @@ function mindGame(number) {
     return result;
 }
 
-console.log(mindGame(50))
+console.log(mindGame(33))
